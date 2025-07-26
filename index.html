@@ -4,26 +4,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Form Practice</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <!-- create form -->
-  <form>
+  <form novalidate>
     <!-- required fields: email, country, postal code, and password and password confirmation -->
-    <label for="email">Email</label>
+    <label for="email-input">Email</label>
     <input type="email" id="email-input">
+    <span class="error" id="email-error" aria-live="polite"></span>
 
-    <label for="country">Country</label>
+    <label for="country-input">Country</label>
     <input type="text" id="country-input">
+    <span class="error" id="country-error" aria-live="polite"></span>
     
-    <label for="postal-code">Postal Code</label>
+    <label for="postal-code-input">Postal Code</label>
     <input type="text" id="postal-code-input">
+    <span class="error" id="postal-code-error" aria-live="polite"></span>
 
-    <label for="password">Password</label>
-    <input type="text" id="password-confirmation">
+    <label for="password-input">Password</label>
+    <input type="text" id="password-input">
+
+    <label for="password-confirmation-input">Password</label>
+    <input type="text" id="password-confirmation-input">
+    <span class="error" id="password-confirmation-error" aria-live="polite"></span>
 
     <button type="submit">Submit</button>
   </form>
+
+  <div class="hello"></div>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
